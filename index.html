@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List App</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div id="todo-app">
+            <h1>
+                To-do List App
+            </h1>
+            <table>
+                <tr>
+                    <th class="wide-col">
+                        Task
+                    </th>
+                    <th class="slim-col">
+                        Deadline
+                    </th>
+                    <th class="slim-col">
+                        Actions
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        <button class="add-button" onclick="toggleMenu()" >
+            +
+        </button>
+
+        <div class="card center">
+            <i class="bi bi-x" onclick="toggleMenu()"></i>
+            <h1>Add Task</h1>
+            <fieldset class="border-el margin-extra">
+                <legend>Task Name</legend>
+                <textarea id="w3review" name="w3review" rows="3" cols="40"></textarea>
+            </fieldset>
+            <fieldset class="border-el">
+                <legend>Due Date</legend>
+                <input type="date"/>
+            </fieldset>
+            <button class="add-task-button">
+                Add task
+            </button>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
