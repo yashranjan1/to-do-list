@@ -10,13 +10,16 @@
             <h1>
                 To-do List App
             </h1>
-            <table>
+            <table id="todo-table">
                 <tr>
-                    <th class="wide-col">
+                    <th class="slim-col">
                         Task
                     </th>
                     <th class="slim-col">
                         Deadline
+                    </th>
+                    <th class="slim-col">
+                        Status
                     </th>
                     <th class="slim-col">
                         Actions
@@ -33,13 +36,15 @@
             <i class="bi bi-x" onclick="toggleMenu()"></i>
             <h1>Add Task</h1>
             <fieldset class="border-el margin-extra">
-                <legend>Task Name</legend>
-                <textarea id="w3review" name="w3review" rows="3" cols="40"></textarea>
+                <legend>Task Description</legend>
+                <textarea id="taskDesc" rows="3" cols="40"></textarea>
             </fieldset>
+            <span class="danger" id="task-warning">You need to write a task description to add a task!</span>
             <fieldset class="border-el">
                 <legend>Due Date</legend>
-                <input type="date"/>
+                <input type="date" id="deadline" />
             </fieldset>
+            <span class="danger" id="deadline-warning">Your task needs a deadline!</span>
             <button class="add-task-button">
                 Add task
             </button>
